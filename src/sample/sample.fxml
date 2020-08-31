@@ -1,8 +1,48 @@
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.layout.GridPane?>
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
 <GridPane fx:controller="sample.Controller"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+    <stylesheets>
+        <URL value="@/css/style.css"/> <!--не подключается!!!-->
+    </stylesheets>
+    <MenuBar GridPane.rowIndex="0" GridPane.columnIndex="0"> <!--выпадающая менюшка-->
+        <Menu text = "Menu">
+            <MenuItem text = "Settings"/>
+            <MenuItem fx:id="exitBtn" text= "Exit" />
+        </Menu>
+    </MenuBar>
+
+    <TextArea fx:id="textArea" GridPane.rowIndex="1" GridPane.columnIndex="0" prefWidth="450" prefHeight="350"/> <!--окно переписки-->
+
+
+    <HBox GridPane.rowIndex="2" GridPane.columnIndex="0"> <!--поле с кнопками быстрого ответа-->
+        <Label text="Fast answer " />
+        <Button text="NO!" onAction="#onClickBtn" />
+        <Button text="YES!" onAction="#onClickBtn" />
+        <Button text="LOL" onAction="#onClickBtn" />
+        <Button text="+100500" onAction="#onClickBtn" />
+        <Button text="I agree" onAction="#onClickBtn" />
+        <Button text="I disagree" onAction="#onClickBtn" />
+    </HBox>
+
+    <TextField fx:id="textField" GridPane.rowIndex="3" GridPane.columnIndex="0"/> <!--поле ввода текста-->
+
+    <Button fx:id="sendMsg" text="Send message" onKeyPressed ="#onClickKey"  GridPane.rowIndex="4" GridPane.columnIndex="0"/> <!--кнопка отправить-->
+
+
+
+
+
+
+
 </GridPane>

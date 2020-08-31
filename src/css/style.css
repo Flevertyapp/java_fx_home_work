@@ -1,0 +1,17 @@
+.button{
+    fx-background-color: #808080; /*цвета кнопок*/
+    fx-font-size: 14;
+}
+#sendMsg{
+    fx-background-color: #778899; /*цвет кнопки отправить*/
+}
+.button:hover, #sendMsg:hover{
+    fx-background-color: #FFF8DC; /*цвет кнопок при наведении*/
+}
+.text-area{
+    fx-background-color: #000000; /*цвет рамки текст поля*/
+    fx-control-inner-background: #FFEBCD; /*цвет заливки текст поля*/
+    fx-text-fill: blue; /*цвет текста*/
+    fx-highlight-text-fill: white; /*цвет текста при выделении*/
+    fx-highlight-fill: #A0522D; /*цвет выделения текста*/
+}
