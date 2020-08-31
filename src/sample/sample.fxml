@@ -18,7 +18,7 @@
     <MenuBar GridPane.rowIndex="0" GridPane.columnIndex="0"> <!--выпадающая менюшка-->
         <Menu text = "Menu">
             <MenuItem text = "Settings"/>
-            <MenuItem fx:id="exitBtn" text= "Exit" />
+            <MenuItem text= "Exit" />
         </Menu>
     </MenuBar>
 
@@ -37,7 +37,7 @@
 
     <TextField fx:id="textField" GridPane.rowIndex="3" GridPane.columnIndex="0"/> <!--поле ввода текста-->
 
-    <Button fx:id="sendMsg" text="Send message" onKeyPressed ="#onClickKey"  GridPane.rowIndex="4" GridPane.columnIndex="0"/> <!--кнопка отправить-->
+    <Button text="Send message" onKeyPressed ="#onClickKey"  GridPane.rowIndex="4" GridPane.columnIndex="0"/> <!--кнопка отправить-->
 
 
 
