@@ -14,7 +14,7 @@ public class Main extends Application {
         primaryStage.setTitle("Home Work #4");
         primaryStage.setScene(new Scene(root, 500, 575));
         primaryStage.show();
-        /*primaryStage.getScene().getStylesheets().add("src\\css\\style.css"); //этот вызов тоже не находит CSS*/
+        /*primaryStage.getScene().getStylesheets().add("src\\css\\style.css"); //такой вызов тоже не находит CSS*/
     }
 
 

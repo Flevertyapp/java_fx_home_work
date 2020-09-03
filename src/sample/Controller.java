@@ -26,7 +26,6 @@ public class Controller {
         textArea.appendText(textField.getText() + "\n");
         textField.clear();
         textField.requestFocus();
-
     }*/
 
     public void onClickKey(KeyEvent keyEvent) { //работает только после клика мышкой
